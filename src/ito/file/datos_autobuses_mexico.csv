@@ -1,0 +1,101 @@
+Linea de autobus,Fecha,Hora,Origen,Destino,Tiempo,Costo
+Transportes del Norte,2025-10-31,05:00,Ciudad de Mexico,Villahermosa,6:00,757,2
+ADO,2025-06-21,12:00,Guadalajara,Hermosillo,8:00,323
+Estrella Roja,2025-06-30,20:00,Cuernavaca,Ciudad de Mexico,4:00,1225
+Turistar,2025-08-21,17:00,Merida,Morelia,17:00,897
+Turistar,2025-02-24,19:00,Puebla,Hermosillo,13:00,302
+Estrella Roja,2025-06-17,04:00,Guadalajara,San Luis Potosi,5:00,429
+Turistar,2025-08-15,14:00,Monterrey,Oaxaca,2:00,158
+Transportes del Norte,2025-07-13,20:00,Tijuana,Veracruz,5:00,283
+Transportes del Norte,2025-06-13,13:00,Hermosillo,Queretaro,17:00,540
+Turistar,2025-10-20,12:00,Leon,Villahermosa,18:00,625
+ADO,2025-08-27,17:00,Puebla,Chihuahua,10:00,1208
+Primera Plus,2025-02-22,09:00,Morelia,Monterrey,9:00,329
+Turistar,2025-09-26,11:00,Guadalajara,Monterrey,8:00,1466
+Futura,2025-04-16,22:00,Leon,Chihuahua,4:00,717
+Turistar,2025-09-14,01:00,Hermosillo,Tijuana,16:00,1470
+Primera Plus,2025-10-01,02:00,Tijuana,Puebla,3:00,698
+AU,2025-11-16,01:00,San Luis Potosi,Villahermosa,3:00,258
+AU,2025-09-15,05:00,Cuernavaca,Leon,16:00,240
+Estrella Roja,2025-10-09,16:00,Chihuahua,Veracruz,4:00,1221
+Turistar,2025-05-07,00:00,Aguascalientes,Acapulco,11:00,1319
+ADO,2025-02-11,21:00,San Luis Potosi,Veracruz,11:00,812
+ADO,2025-07-27,21:00,San Luis Potosi,Queretaro,8:00,1275
+ADO,2025-09-27,11:00,Ciudad de Mexico,Acapulco,18:00,201
+ADO,2025-12-01,20:00,San Luis Potosi,Villahermosa,13:00,589
+ADO,2025-05-04,00:00,Queretaro,Hermosillo,13:00,247
+Primera Plus,2025-04-18,08:00,Aguascalientes,Tijuana,14:00,1214
+Estrella Roja,2025-03-28,03:00,San Luis Potosi,Acapulco,7:00,393
+Transportes del Norte,2025-07-09,06:00,Monterrey,Villahermosa,6:00,1441
+Turistar,2025-07-09,08:00,Villahermosa,Leon,13:00,1147
+AU,2025-05-20,07:00,Merida,Toluca,18:00,1491
+ETN,2025-03-03,06:00,Tijuana,Acapulco,18:00,890
+ADO,2025-10-19,00:00,Veracruz,Hermosillo,11:00,465
+Transportes del Norte,2025-06-03,18:00,Villahermosa,Veracruz,12:00,873
+Primera Plus,2025-12-06,00:00,Ciudad de Mexico,Tijuana,3:00,787
+Futura,2025-03-06,10:00,Villahermosa,Chihuahua,3:00,525
+ETN,2025-09-12,05:00,Cuernavaca,Guadalajara,12:00,674
+ETN,2025-05-25,01:00,Leon,Toluca,18:00,1230
+ETN,2025-03-15,10:00,Monterrey,Queretaro,10:00,932
+Transportes del Norte,2025-09-30,12:00,Aguascalientes,Queretaro,4:00,731
+Primera Plus,2025-09-22,07:00,Oaxaca,Merida,12:00,1201
+Futura,2025-12-03,15:00,Merida,Oaxaca,10:00,249
+ADO,2025-10-12,01:00,Morelia,Toluca,11:00,1237
+ETN,2025-05-29,23:00,Tijuana,Queretaro,8:00,470
+ETN,2025-08-25,23:00,Guadalajara,Veracruz,15:00,1013
+ADO,2025-02-15,01:00,Cuernavaca,Hermosillo,15:00,368
+Turistar,2025-02-10,16:00,Cuernavaca,Toluca,14:00,587
+Transportes del Norte,2025-11-26,06:00,Merida,Chihuahua,13:00,1127
+Futura,2025-09-17,21:00,Villahermosa,Merida,2:00,528
+AU,2025-12-07,12:00,Guadalajara,Acapulco,12:00,879
+ADO,2025-08-31,13:00,Tijuana,Queretaro,18:00,918
+ADO,2025-10-19,03:00,Tijuana,Ciudad de Mexico,9:00,1496
+AU,2025-04-20,16:00,Tijuana,Puebla,17:00,1375
+Turistar,2025-06-19,05:00,Queretaro,Cancun,10:00,324
+Estrella Roja,2025-02-21,22:00,Tijuana,Cancun,18:00,953
+Turistar,2025-06-17,13:00,Leon,Guadalajara,6:00,708
+Transportes del Norte,2025-03-29,00:00,Cuernavaca,Ciudad de Mexico,13:00,391
+Estrella Roja,2025-01-15,22:00,Cuernavaca,Toluca,12:00,731
+AU,2025-03-25,20:00,Oaxaca,Cuernavaca,12:00,936
+ADO,2025-10-10,12:00,Cuernavaca,Monterrey,15:00,705
+Primera Plus,2025-04-11,11:00,Hermosillo,Cuernavaca,18:00,260
+Estrella Roja,2025-08-06,17:00,Veracruz,Oaxaca,8:00,684
+Primera Plus,2025-12-24,12:00,Toluca,Merida,17:00,679
+Primera Plus,2025-08-19,10:00,Guadalajara,Chihuahua,12:00,635
+Transportes del Norte,2025-08-11,19:00,Merida,Tijuana,15:00,296
+ADO,2025-01-30,01:00,Monterrey,Aguascalientes,2:00,820
+Turistar,2025-11-08,11:00,Chihuahua,Queretaro,18:00,231
+ADO,2025-09-18,01:00,Hermosillo,Guadalajara,15:00,396
+ETN,2025-10-24,23:00,Tijuana,Guadalajara,2:00,711
+Turistar,2025-02-04,18:00,Hermosillo,Tijuana,17:00,1047
+AU,2025-07-10,08:00,Monterrey,Ciudad de Mexico,5:00,923
+Transportes del Norte,2025-08-15,06:00,Hermosillo,Toluca,3:00,1123
+Primera Plus,2025-05-29,11:00,Cancun,Tijuana,6:00,683
+ETN,2025-09-05,02:00,Aguascalientes,Monterrey,3:00,169
+Estrella Roja,2025-09-23,07:00,Leon,Veracruz,6:00,788
+Primera Plus,2025-03-28,13:00,Tijuana,Leon,9:00,452
+Estrella Roja,2025-11-28,13:00,Oaxaca,Puebla,8:00,1487
+Primera Plus,2025-11-12,18:00,Queretaro,Ciudad de Mexico,17:00,779
+Transportes del Norte,2025-09-16,22:00,Guadalajara,Villahermosa,5:00,1381
+AU,2025-05-27,03:00,Chihuahua,Cuernavaca,11:00,1067
+Turistar,2025-08-15,04:00,Hermosillo,San Luis Potosi,18:00,1338
+Primera Plus,2025-03-29,03:00,Veracruz,Hermosillo,17:00,252
+AU,2025-02-20,22:00,Chihuahua,Leon,3:00,425
+Futura,2025-10-20,20:00,Ciudad de Mexico,Cancun,8:00,711
+Primera Plus,2025-12-27,11:00,Hermosillo,Leon,7:00,1152
+Primera Plus,2025-11-01,14:00,San Luis Potosi,Leon,17:00,1383
+ADO,2025-12-05,23:00,Veracruz,Guadalajara,18:00,201
+ADO,2025-10-11,20:00,Veracruz,Oaxaca,7:00,803
+Futura,2025-03-08,06:00,Oaxaca,Ciudad de Mexico,2:00,943
+AU,2025-06-18,04:00,Toluca,Tijuana,9:00,1313
+Primera Plus,2025-05-25,16:00,Queretaro,Chihuahua,7:00,852
+Futura,2025-02-14,12:00,Puebla,Merida,5:00,1477
+ETN,2025-08-27,16:00,Toluca,Veracruz,3:00,1020
+Estrella Roja,2025-12-08,13:00,Acapulco,Guadalajara,2:00,214
+Turistar,2025-07-09,05:00,Villahermosa,Acapulco,15:00,645
+Primera Plus,2025-11-03,07:00,Veracruz,Aguascalientes,2:00,223
+ADO,2025-09-26,13:00,Veracruz,Cuernavaca,18:00,640
+Transportes del Norte,2025-09-29,20:00,Toluca,Queretaro,4:00,636
+ETN,2025-10-05,00:00,Hermosillo,Morelia,4:00,249
+AU,2025-01-30,18:00,San Luis Potosi,Oaxaca,18:00,1068
+ETN,2025-01-19,23:00,Merida,Queretaro,5:00,926
