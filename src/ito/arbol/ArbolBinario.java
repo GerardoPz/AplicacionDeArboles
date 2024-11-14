@@ -3,7 +3,9 @@ package ito.arbol;
 import ito.Corrida;
 import ito.arbol.ExcepcionNodoRepetido;
 
+import java.util.ArrayList;
 import java.util.Comparator;
+import java.util.List;
 
 public class ArbolBinario<E extends Comparable<E>> implements Arbol<E> {
 
@@ -154,5 +156,31 @@ public class ArbolBinario<E extends Comparable<E>> implements Arbol<E> {
 			System.out.println(nodo.getItem().toString()); // Imprimir el objeto de la corrida
 			imprimirEnInorden(nodo.getDerecho()); // Recorrer el subárbol derecho
 		}
+	}
+
+	// Método que busca todas las corridas con la misma línea de autobús
+	public static List<Corrida> buscarCorridasPorLineaDeAutobus(ArbolBinario<Corrida> arbol, String lineaDeAutobus) {
+		List<Corrida> resultado = new ArrayList<>();
+		// Usar un comparador que ignore todos los atributos excepto la línea de autobús
+		Comparator<Corrida> comparadorLinea = Comparator.comparing(Corrida::getLineaDeAutobus);
+
+		// Buscar todas las corridas que coincidan con la línea de autobús
+		buscarCorridasEnArbol(arbol.raiz, lineaDeAutobus, comparadorLinea, resultado);
+
+		return resultado;
+	}
+
+	// Método recursivo para buscar todas las corridas en el árbol con la línea de autobús dada
+	private static void buscarCorridasEnArbol(NodoArbol<Corrida> nodo, String lineaDeAutobus, Comparator<Corrida> comparador, List<Corrida> resultado) {
+		if (nodo == null) return;
+
+		// Si la línea de autobús del nodo es igual a la buscada, agregamos el nodo a la lista de resultados
+		if (comparador.compare(nodo.getItem(), new Corrida(lineaDeAutobus, "", "", "", "", "", "")) == 0) {
+			resultado.add(nodo.getItem());
+		}
+
+		// Buscar en el subárbol izquierdo y derecho
+		buscarCorridasEnArbol(nodo.getIzquierdo(), lineaDeAutobus, comparador, resultado);
+		buscarCorridasEnArbol(nodo.getDerecho(), lineaDeAutobus, comparador, resultado);
 	}
 }
