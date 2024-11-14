@@ -1,15 +1,17 @@
 package ito;
 
-public class AutobusesCorridas implements Comparable<AutobusesCorridas> {
+import java.time.LocalDate;
+
+public class AutobusesCorridas {
     private String lineaDeAutobus;
-    private String fecha;
+    private LocalDate fecha;
     private String hora;
     private String origen;
     private String destino;
     private String tiempo;
     private String costo;
 
-    public AutobusesCorridas(String lineaDeAutobus, String fecha, String hora, String origen, String destino, String tiempo, String costo) {
+    public AutobusesCorridas(String lineaDeAutobus, LocalDate fecha, String hora, String origen, String destino, String tiempo, String costo) {
         this.lineaDeAutobus = lineaDeAutobus;
         this.fecha = fecha;
         this.hora = hora;
@@ -24,7 +26,7 @@ public class AutobusesCorridas implements Comparable<AutobusesCorridas> {
         return lineaDeAutobus;
     }
 
-    public String getFecha() {
+    public LocalDate getFecha() {
         return fecha;
     }
 
@@ -46,15 +48,6 @@ public class AutobusesCorridas implements Comparable<AutobusesCorridas> {
 
     public String getCosto() {
         return costo;
-    }
-
-    @Override
-    public int compareTo(AutobusesCorridas otraCorrida) {
-        int resultadoFecha = this.fecha.compareTo(otraCorrida.fecha);
-        if (resultadoFecha != 0) {
-            return resultadoFecha;
-        }
-        return this.hora.compareTo(otraCorrida.hora);
     }
 
     @Override
