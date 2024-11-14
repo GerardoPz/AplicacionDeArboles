@@ -21,9 +21,21 @@ public class Corrida implements Comparable<Corrida> {
 
     @Override
     public int compareTo(Corrida o) {
-        // Aquí puedes comparar por hora, por ejemplo:
-        return this.hora.compareTo(o.hora);
+        int comparacionLinea = this.lineaDeAutobus.compareTo(o.lineaDeAutobus);
+        if (comparacionLinea != 0) return comparacionLinea;
+
+        int comparacionFecha = this.fecha.compareTo(o.fecha);
+        if (comparacionFecha != 0) return comparacionFecha;
+
+        int comparacionHora = this.hora.compareTo(o.hora);
+        if (comparacionHora != 0) return comparacionHora;
+
+        int comparacionOrigen = this.origen.compareTo(o.origen);
+        if (comparacionOrigen != 0) return comparacionOrigen;
+
+        return this.destino.compareTo(o.destino);
     }
+
 
     public String getLineaDeAutobus() {
         return lineaDeAutobus;

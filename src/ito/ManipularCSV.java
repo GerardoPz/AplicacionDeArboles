@@ -15,13 +15,11 @@ public class ManipularCSV {
             String linea;
             boolean primeraLinea = true;
             while ((linea = br.readLine()) != null) {
-                // Saltar la primera línea si es un encabezado
                 if (primeraLinea) {
                     primeraLinea = false;
                     continue;
                 }
 
-                // Dividir los datos y validar su longitud
                 String[] datosCorridas = linea.split(",");
                 if (datosCorridas.length != 7) {
                     System.out.println("Línea inválida: " + linea);
@@ -29,13 +27,10 @@ public class ManipularCSV {
                 }
 
                 try {
-                    // Crear una nueva instancia de Corrida
                     Corrida corrida = new Corrida(datosCorridas[0], datosCorridas[1], datosCorridas[2],
                             datosCorridas[3], datosCorridas[4], datosCorridas[5], datosCorridas[6]);
-                    // Agregar al árbol
                     arbolBinarioDeCorridas.add(corrida);
                 } catch (ExcepcionNodoRepetido e) {
-                    // Manejar nodos duplicados sin detener la ejecución
                     System.out.println("Nodo repetido: " + datosCorridas[0]);
                 }
             }
