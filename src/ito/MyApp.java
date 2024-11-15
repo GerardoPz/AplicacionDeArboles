@@ -1,5 +1,7 @@
 package ito;
 
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.util.Date;
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -9,6 +11,9 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import com.toedter.calendar.JCalendar;
+import ito.arbol.ArbolBinario;
+import ito.lista.ExcepcionDeListaLlena;
+import ito.lista.ListaDinamica;
 
 
 public class MyApp {
@@ -57,8 +62,17 @@ public class MyApp {
         return destinoUsuario;
     }
 
-    public void runApp(){
+    public void runApp(String fecha, String origen, String destino) throws FileNotFoundException, ExcepcionDeListaLlena {
+        String projectPath = System.getProperty("user.dir");
+        String path = projectPath + File.separator + "src" + File.separator + "ito" + File.separator + "file" + File.separator + "datos_autobuses_mexico.csv";
 
+        ArbolBinario<Corrida> arbol = ManipularCSV.llenarArbol(path);
+
+        ListaDinamica<Corrida> corridasEncontradas = arbol.buscarCorridasPorFechaOrigenDestino(arbol, fecha, origen, destino);
+        System.out.println("\nCorridas encontradas para la fecha " + fecha + ", origen " + origen + " y destino " + destino + ":");
+        for (Corrida corrida : corridasEncontradas) {
+            TJOption.imprimePantalla(String.valueOf(corrida));
+        }
     }
 
     public boolean consultaUsuario(){
