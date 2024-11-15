@@ -158,11 +158,12 @@ public class ArbolBinario<E extends Comparable<E>> implements Arbol<E> {
 		}
 	}
 
+	/*
 	// Método que busca todas las corridas con la misma línea de autobús
 	public static List<Corrida> buscarCorridasPorLineaDeAutobus(ArbolBinario<Corrida> arbol, String lineaDeAutobus) {
 		List<Corrida> resultado = new ArrayList<>();
 		// Usar un comparador que ignore todos los atributos excepto la línea de autobús
-		Comparator<Corrida> comparadorLinea = Comparator.comparing(Corrida::getLineaDeAutobus);
+		Comparator<Corrida> comparadorLinea = Comparator.comparing(Corrida::getOrigen);
 
 		// Buscar todas las corridas que coincidan con la línea de autobús
 		buscarCorridasEnArbol(arbol.raiz, lineaDeAutobus, comparadorLinea, resultado);
@@ -175,12 +176,34 @@ public class ArbolBinario<E extends Comparable<E>> implements Arbol<E> {
 		if (nodo == null) return;
 
 		// Si la línea de autobús del nodo es igual a la buscada, agregamos el nodo a la lista de resultados
-		if (comparador.compare(nodo.getItem(), new Corrida(lineaDeAutobus, "", "", "", "", "", "")) == 0) {
+		if (comparador.compare(nodo.getItem(), new Corrida("", "", "", lineaDeAutobus, "", "", "")) == 0) {
 			resultado.add(nodo.getItem());
 		}
 
 		// Buscar en el subárbol izquierdo y derecho
 		buscarCorridasEnArbol(nodo.getIzquierdo(), lineaDeAutobus, comparador, resultado);
 		buscarCorridasEnArbol(nodo.getDerecho(), lineaDeAutobus, comparador, resultado);
+	}
+	 */
+	// Método que busca corridas filtrando por fecha, origen y destino
+	public List<E> buscarCorridasPorFechaOrigenDestino(ArbolBinario<E> arbol, String fecha, String origen, String destino) {
+		List<E> resultado = new ArrayList<>();
+		buscarCorridasEnArbolPorFechaOrigenDestino((NodoArbol<Corrida>) arbol.raiz, fecha, origen, destino, (List<Corrida>) resultado);
+		return resultado;
+	}
+
+	// Método recursivo para buscar las corridas en el árbol con los filtros de fecha, origen y destino
+	private static void buscarCorridasEnArbolPorFechaOrigenDestino(NodoArbol<Corrida> nodo, String fecha, String origen, String destino, List<Corrida> resultado) {
+		if (nodo == null) return;
+
+		Corrida corrida = nodo.getItem();
+		// Comprobar si la corrida coincide con los filtros ingresados
+		if (corrida.getFecha().equals(fecha) && corrida.getOrigen().equalsIgnoreCase(origen) && corrida.getDestino().equalsIgnoreCase(destino)) {
+			resultado.add(corrida);
+		}
+
+		// Buscar en los subárboles izquierdo y derecho
+		buscarCorridasEnArbolPorFechaOrigenDestino(nodo.getIzquierdo(), fecha, origen, destino, resultado);
+		buscarCorridasEnArbolPorFechaOrigenDestino(nodo.getDerecho(), fecha, origen, destino, resultado);
 	}
 }
