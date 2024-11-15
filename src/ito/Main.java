@@ -1,5 +1,5 @@
 package ito;
-
+/*
 import ito.arbol.ArbolBinario;
 import ito.lista.ExcepcionDeListaLlena;
 import ito.lista.ExcepcionDeListaVacia;
@@ -49,5 +49,22 @@ public class Main {
             }
         }
         scanner.close();
+    }
+}
+*/
+public class Main {
+    static void run(){
+        MyApp app = new MyApp();
+        boolean consulta = true;
+        do{
+            app.leerFecha();
+            app.leerOrigen("Ingrese el origen de su corrida de autobus");
+            app.leerdestino("Ingrese el destino de su corrida de autobus");
+            app.runApp();
+            consulta = app.consultaUsuario();
+        } while (consulta);
+    }
+    public static void main(String[] args){
+        run();
     }
 }
