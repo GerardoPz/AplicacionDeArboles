@@ -48,7 +48,6 @@ public class Main {
                 System.out.println("Saliendo del programa. ¡Hasta luego!");
             }
         }
-
         scanner.close();
     }
 }
