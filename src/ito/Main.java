@@ -58,8 +58,8 @@ public class Main {
         boolean consulta = true;
         do{
             app.leerFecha();
-            app.leerOrigen("Ingrese el origen de su corrida de autobus");
-            app.leerdestino("Ingrese el destino de su corrida de autobus");
+            String origen = app.leerOrigen("Ingrese el origen de su corrida de autobus");
+            String destio = app.leerdestino("Ingrese el destino de su corrida de autobus");
             app.runApp();
             consulta = app.consultaUsuario();
         } while (consulta);
